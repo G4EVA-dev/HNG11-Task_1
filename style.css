@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppis", sans;
+  color: white;
+}
+
+body {
+  background-color: rgba(8, 27, 41, 255);
+}
+
+header {
+  display: flex;
+  padding: 20px 55px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: monospace, serif;
+  background-color: rgb(22, 42, 61);
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Changing Text */
+#text-container {
+  font-family: monospace; /* Use a monospaced font for consistent character width */
+  white-space: pre; /* Preserve spaces and line breaks */
+  overflow: hidden; /* Clip overflowing characters */
+}
+
+#text-container::after {
+  content: ""; /* Insert an empty pseudo-element for the cursor */
+  display: inline-block;
+  width: 2px; /* Cursor width */
+  height: 100%; /* Cursor height */
+  background-color: black; /* Cursor color */
+  animation: blink 0.7s step-end infinite; /* Animate blinking cursor */
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.textSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  padding-top: 150px;
+  line-height: 6rem;
+  padding-left: 55px;
+}
+
+.left h1 {
+  font-size: 64px;
+}
+
+.left h3 {
+  font-size: 32px;
+}
+
+/* #myImage {
+  max-width: 100%;
+} */
+
+.goals {
+  margin-top: 20px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+.goals > h1{
+  font-size: 2.5rem;
+}
+
+footer {
+  margin-top: 15px;
+  background-color: rgb(22, 42, 61);
+  padding: 40px;
+
+}
+
+footer h1 {
+  text-align: center;
+}
+
+footer ul li a{
+  text-decoration: none;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  }
+
+  footer ul li { 
+    margin-left: 35px;
+    text-decoration: underline;
+    font-size: 1.2rem;
+  }
+
+  footer ul li a:hover {
+    color: aqua;
+  }
+
+
+
+@media only screen and (max-width: 1500px) {
+  /* Styles for smaller screens */
+  .container {
+    padding: 0 20px; /* Add some padding on smaller screens */
+  }
+
+  header {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .dateTime h3 {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .textSection {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .left,
+  .right {
+    padding: 5px; /* Adjust padding for better spacing on small screens */
+  }
+
+  .left h1 {
+    font-size: 2rem; /* Adjust font size for better readability */
+    line-height: 3rem;
+  }
+
+  .left h3 {
+    font-size: 1.5rem; /* Adjust font size for better readability */
+  }
+
+  .goals {
+    width: 100%; /* Make goals section take full width on small screens */
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    padding: 10px;
+  }
+  
+  .goals article h1 {
+    font-size: 1.5rem;
+  }
+}
+
+  

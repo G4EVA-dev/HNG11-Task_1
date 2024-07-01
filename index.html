@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Basic Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1 data-testid="slackDisplayName">
+        <span style="color: red">G</span>lenzzy.
+      </h1>
+      <div class="dateTime">
+        <h3 data-testid="currentTimeUTC" id="currentTime"></h3>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="textSection">
+        <section class="left">
+          <h1>
+            Hello👋🏼 <br />Soo happy it's
+            <span data-testid="currentDay" id="show_day"></span>. <br />
+            I'm Efuetlancha <span>Glenn</span>, <br />
+            Front-end Developer from <span style="color: green">Ca</span
+            ><span style="color: red">mer</span
+            ><span style="color: yellow">oon</span>
+          </h1>
+          <span>My Email: </span><a href="mailto:tanzeglenn@gamil.com" data-testid="slackEmail">tanzeglenn@gmail.com</a>
+
+          <h3>I love <span id="text-container"></span></h3>
+        </section>
+        <section class="right">
+          <img
+            data-testid="slackProfilePicture"
+            id="myImage"
+            src="./images/glenn-removebg.png"
+            alt="Glenn Tanze"
+          />
+        </section>
+      </div>
+
+      <div class="goals">
+        <h1 id="goalHead" style="text-align: center; ">My Goals in Tech</h1> <br><br>
+        <article>
+          <h1>
+            Here’s a detailed outline of my goals:
+          </h1> <br><br>
+
+          <h1>First Year: Expanding Knowledge and Skills</h1>
+          <h3> <br>
+            Once the basics are solid, I will aim to broaden my skill set. I
+            will:
+          </h3>
+
+          <ol>
+            <li>
+              Learn Version Control: Master Git and GitHub to understand version
+              control, collaboration, and open-source contributions.
+            </li>
+            <li>
+              Explore Frameworks and Libraries: Dive into popular frameworks and
+              libraries such as Django or Flask for Python, React for
+              JavaScript, to create more complex web applications.
+            </li>
+            <li>
+              Database Management: Learn about SQL and NoSQL databases, focusing
+              on MySQL, PostgreSQL, and MongoDB, to handle data storage and
+              manipulation.
+            </li>
+            <li>
+              Contribute to Open Source: Start contributing to open-source
+              projects to gain real-world experience, learn from seasoned
+              developers, and build a network.
+            </li>
+          </ol> <br>
+
+          <h1>Second Year: Specialization and Professional Development</h1><br>
+          <h3>
+            In the second year, the focus will shift towards specialization and
+            career readiness. I will:
+          </h3><br>
+
+          <ol>
+            <li>
+              Choose a Specialization: Identify a niche area of interest, such
+              as web development, data science, machine learning, or
+              cybersecurity, and pursue it with dedicated learning resources and
+              projects.
+            </li>
+            <li>
+              Advanced Learning: Enroll in specialized courses, bootcamps, or
+              certifications relevant to the chosen field to gain in-depth
+              knowledge and industry-recognized credentials.
+            </li>
+            <li>
+              Build a Professional Portfolio: Develop and showcase complex
+              projects on GitHub or a personal portfolio website to demonstrate
+              skills and attract potential employers.
+            </li>
+            <li>
+              Networking and Mentorship: Attend tech meetups, webinars, and
+              conferences to network with professionals, seek mentorship, and
+              stay updated with industry trends.
+            </li>
+            <li>
+              Internships and Freelancing: Apply for internships, part-time
+              roles, or freelance projects to gain practical experience,
+              understand workplace dynamics, and build a resume.
+            </li>
+          </ol> <br><br>
+
+          <h1>Long-Term Vision</h1>
+          <aside>
+            By the end of two years, I aim to be proficient in multiple
+            programming languages, have a robust understanding of computer
+            science fundamentals, and possess practical experience in my chosen
+            specialization. My portfolio will reflect a range of projects that
+            demonstrate my capabilities. Additionally, I will have established a
+            network of industry contacts and possibly have some professional
+            experience through internships or freelancing. This comprehensive
+            approach will position me strongly for a successful career in the
+            tech industry.
+          </aside>
+        </article>
+      </div>
+
+      <footer>
+        <h1>Important Links:</h1>
+        <ul>
+          <li><a href="http://hng.tech/learn" target="_blank" data-testid="hngLink">hng-tech</a></li>
+          <li><a href="http://keyword.dog/" target="_blank" data-testid="keywordLink">keyword</a></li>
+          <li><a href="http://scrapeanyweb.site/" target="_blank" data-testid="scrapeanywebLink">scrapeanyweb</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
