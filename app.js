@@ -36,13 +36,29 @@ function typeWriter() {
 typeWriter();
 
 //! Working with Date object
-const now = new Date();
-//Time
-const time = now.getTime();
-const utcString = now.toString();
-currentTimeUTC.textContent = utcString;
+
+
+function updateTime() {
+  // Get the current date object in UTC
+  const utcDate = new Date().toLocaleString("en-US", { timeZone: "UTC" });
+
+  // Extract the time portion from the formatted UTC string
+  const formattedTime = utcDate.split(", ")[1];
+
+  // Update the element with the current UTC time
+  // const timeElement = document.getElementById("currentTime");
+  currentTimeUTC.textContent = formattedTime;
+}
+
+// Call the updateTime function initially to display the time
+updateTime();
+
+// Set an interval to update the time every second
+setInterval(updateTime, 1000); // 1000 milliseconds = 1 second
+
 
 //Day
+const now = new Date();
 const currentDay = document.getElementById("show_day");
 const daysOfWeek = [
   "Sunday",
