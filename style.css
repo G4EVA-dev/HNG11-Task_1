@@ -68,9 +68,9 @@ header h1 {
   font-size: 32px;
 }
 
-/* #myImage {
+#myImage {
   max-width: 100%;
-} */
+}
 
 .goals {
   margin-top: 20px;
@@ -85,6 +85,7 @@ header h1 {
 }
 
 footer {
+  width: 100%;
   margin-top: 15px;
   background-color: rgb(22, 42, 61);
   padding: 40px;
@@ -118,7 +119,7 @@ footer ul {
 
 
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1300px) {
   /* Styles for smaller screens */
   .container {
     padding: 0 20px; /* Add some padding on smaller screens */
@@ -169,4 +170,14 @@ footer ul {
   }
 }
 
+@media only screen and (max-width: 530px) {
+  footer ul{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer ul li {
+    margin-top: 20px;
+  }
+}
   
