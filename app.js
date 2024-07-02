@@ -37,16 +37,22 @@ typeWriter();
 
 //! Working with Date object
 
-
 function updateTime() {
   // Get the current date object in UTC
-  const utcDate = new Date().toLocaleString("en-US", { timeZone: "UTC" });
+  const utcDate = new Date();
 
-  // Extract the time portion from the formatted UTC string
-  const formattedTime = utcDate.split(", ")[1];
+  // Format the time portion in French 24-hour format
+  const options = {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+    timeZone: "UTC",
+  };
+  const formattedTime = utcDate.toLocaleTimeString("fr-FR", options);
 
   // Update the element with the current UTC time
-  // const timeElement = document.getElementById("currentTime");
+  const currentTimeUTC = document.getElementById("currentTime");
   currentTimeUTC.textContent = formattedTime;
 }
 
@@ -55,6 +61,7 @@ updateTime();
 
 // Set an interval to update the time every second
 setInterval(updateTime, 1000); // 1000 milliseconds = 1 second
+
 
 
 //Day
