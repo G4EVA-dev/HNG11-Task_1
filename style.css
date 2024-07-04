@@ -273,7 +273,7 @@ footer ul {
 
 /* Specific styles for project1 */
 .project1 .text {
-  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background */
+  background-color: black; /* Add a semi-transparent background */
   color: #fff; /* White text color */
 }
 
