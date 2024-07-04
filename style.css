@@ -178,6 +178,137 @@ footer ul {
   }
 }
 
+/* General styles for the project cards */
+/* .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.projectCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text {
+  padding: 16px;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.text a {
+  color: #333;
+  text-decoration: none;
+}
+
+.text a:hover {
+  text-decoration: underline;
+} */
+
+/* General styles for the project cards */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 24px;
+}
+
+.projectCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text {
+  padding: 16px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.text h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.text a {
+  color: #333;
+  text-decoration: none;
+}
+
+.text a:hover {
+  text-decoration: underline;
+}
+
+/* Specific styles for project1 */
+.project1 .text {
+  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background */
+  color: #fff; /* White text color */
+}
+
+.project1 .text a {
+  color: #fff; /* White link color */
+}
+
+.project1 .text a:hover {
+  color: #ffcc00; /* Change hover color to something visible */
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+  .projects {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .projects {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
 @media only screen and (max-width: 530px) {
   footer ul{
     flex-direction: column;
