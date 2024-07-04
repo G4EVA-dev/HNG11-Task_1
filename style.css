@@ -82,7 +82,7 @@ header h1 {
   margin-top: 20px;
   width: 60%;
   margin: 0 auto;
-  text-align: justify;
+  /* text-align: justify; */
   line-height: 2rem;
 }
 
@@ -171,6 +171,7 @@ footer ul {
     letter-spacing: 2px;
     word-spacing: 1px;
     padding: 10px;
+    /* text-align: monospace; */
   }
   
   .goals article h1 {
